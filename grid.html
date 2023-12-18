@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.sidebar {
+  background-color:#484747;
+  color: white;
+  width: 200px;
+  height: 560px;
+  padding: 20px;
+  float: left;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+  margin-left: 270px; 
+}
+.container {
+  display: grid;
+grid-template-columns: 340px 340px 340px;
+grid-template-rows: 400px;
+grid-gap: 70px;
+
+}
+.item {
+background-color: #ddd;
+border: 1px solid #999;
+text-align: left;
+line-height: 40px; 
+width: 400px; 
+height: 100px; 
+
+
+}
+footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 5px;
+  clear: both;
+  text-align: center;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    
+      <header>
+        <p>Header</p>
+        
+      </header>
+      
+      <div class="sidebar">
+        <h5>Sidebar</h5>
+    
+      </div>
+      
+      <main>
+       <div class="container">
+        <div class="item">section1</div>
+        <div class="item">section2</div>
+        <div class="item">section3</div>
+       </div>
+      </main>
+      
+      <footer>
+        <p>Footer</p>
+       
+      </footer>
+    </body>
+    </html>
+    
+</body>
+</html>
